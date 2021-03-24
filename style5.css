@@ -1,0 +1,38 @@
+img {
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    left:0;
+    right: 15px;
+    top:0;
+}
+h1
+{
+	color: #000000 ;
+}
+h2{
+    font-size: 25px;
+    color: #000000 ;
+}
+img{
+    width: 500px;
+    height: 250px;
+}
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+    position: fixed;
+    top: 40%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  /* Style the icon bar links */
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
