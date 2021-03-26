@@ -12,6 +12,6 @@
   
   # Here we actually show the page that has the .html extension
   
-  DirectoryIndex home.html index.html index.htm index.php
+  DirectoryIndex home.html index.html index.html index.php
   
   RewriteRule ^(.*)$ $1.html [NC,L]
