@@ -83,11 +83,17 @@ select:-webkit-autofill {
 .body .grid {
   display: grid;
   width: 75%;
+  margin: 0 auto;
   grid-auto-rows: 1fr;
   grid-column-gap: 5%;
   grid-row-gap: 6vh;
   grid-template-columns: repeat(3, 1fr);
   text-align: center;
+}
+
+.grid {
+ position: relative;
+ left: 512.125px;
 }
 
 .body .grid .item {
