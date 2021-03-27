@@ -24,6 +24,21 @@ select:-webkit-autofill {
     color: #e8e6e3 !important;
 }
 
+.grid {
+ position: relative;
+ left: -162.875px;
+}
+
+.item {
+ position: relative;
+ left: 22.875px;
+}
+
+.avatar {
+ position: relative;
+ left: 4.578px;
+}
+
 .container {
  position: relative;
  top: -405px;
