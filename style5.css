@@ -112,6 +112,17 @@ select:-webkit-autofill {
 	margin-bottom: 2vh;
 }
 
+.body .container .line {
+	display: grid1;
+	width: 100%;
+	grid1-auto-rows: 1fr;
+	grid1-column-gap: 5%;
+	grid1-template-columns: repeat(2, 1fr);
+	text-align: center;
+	margin-bottom: 2vh;
+}
+
+
 .body .container .line input {
 	-webkit-appearance: none;
 	color: #fff;
@@ -171,6 +182,18 @@ select:-webkit-autofill {
 		grid-row-gap: 2vh;
 		grid-template-columns: repeat(1, 1fr);
 	}
+	.body .container .line {
+		display: grid1;
+		width: 100%;
+		grid1-row-gap: 2vh;
+		grid1-template-columns: repeat(1, 1fr);
+	}
+	.body .container .line {
+		display: grid2;
+		width: 100%;
+		grid2-row-gap: 2vh;
+		grid2-template-columns: repeat(1, 1fr);
+	}
 }
 
 .top {
@@ -227,7 +250,26 @@ img:nth-child(1) {
   grid-template-columns: repeat(3, 1fr);
   text-align: center;
 }
-
+.body .grid1 {
+  display: grid1;
+  width: 75%;
+  margin: 0 auto;
+  grid1-auto-rows: 1fr;
+  grid1-column-gap: 5%;
+  grid1-row-gap: 6vh;
+  grid1-template-columns: repeat(3, 1fr);
+  text-align: center;
+}
+.body .grid2 {
+  display: grid2;
+  width: 75%;
+  margin: 0 auto;
+  grid2-auto-rows: 1fr;
+  grid2-column-gap: 5%;
+  grid2-row-gap: 6vh;
+  grid2-template-columns: repeat(3, 1fr);
+  text-align: center;
+}
 .grid {
  position: relative;
  left: 512.125px;
@@ -279,6 +321,112 @@ img:nth-child(1) {
 @media screen and (max-width: 600px), (orientation : portrait) {
   .body .grid {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+.grid1 {
+ position: relative;
+ left: 512.125px;
+}
+
+.body .grid1 .item {
+  background-color: #141414;
+  padding: 4vh 3%;
+  border-radius: .5vh;
+}
+
+.body .grid1 .item .avatar {
+  display: inline-block;
+  height: 15vh;
+  width: 15vh;
+  border-radius: 50%;
+  background-color: #0f0f0f;
+  margin-bottom: 1vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.body .grid1 .item .information h1 {
+  font-size: 3vh;
+  color: #fff;
+  margin: 0;
+  margin-bottom: .5vh;
+}
+
+.body .grid1 .item .information h2 {
+  font-size: 1.75vh;
+  color: #fff;
+  margin: 0;
+  font-weight: 400;
+  margin-bottom: 1.5vh;
+}
+
+.body .grid1 .item .information h2 i {
+  margin: 0 .25vw;
+}
+
+.body .grid1 .item .information p {
+  font-size: 1.75vh;
+  color: #fff;
+  margin: 0;
+}
+
+@media screen and (max-width: 600px), (orientation : portrait) {
+  .body .grid1 {
+    grid1-template-columns: repeat(1, 1fr);
+  }
+}
+.grid2 {
+ position: relative;
+ left: 512.125px;
+}
+
+.body .grid2 .item {
+  background-color: #141414;
+  padding: 4vh 3%;
+  border-radius: .5vh;
+}
+
+.body .grid2 .item .avatar {
+  display: inline-block;
+  height: 15vh;
+  width: 15vh;
+  border-radius: 50%;
+  background-color: #0f0f0f;
+  margin-bottom: 1vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.body .grid2 .item .information h1 {
+  font-size: 3vh;
+  color: #fff;
+  margin: 0;
+  margin-bottom: .5vh;
+}
+
+.body .grid2 .item .information h2 {
+  font-size: 1.75vh;
+  color: #fff;
+  margin: 0;
+  font-weight: 400;
+  margin-bottom: 1.5vh;
+}
+
+.body .grid2 .item .information h2 i {
+  margin: 0 .25vw;
+}
+
+.body .grid2 .item .information p {
+  font-size: 1.75vh;
+  color: #fff;
+  margin: 0;
+}
+
+@media screen and (max-width: 600px), (orientation : portrait) {
+  .body .grid2 {
+    grid2-template-columns: repeat(1, 1fr);
   }
 }
 
